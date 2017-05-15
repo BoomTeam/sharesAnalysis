@@ -1,3 +1,4 @@
+#coding:utf-8
 """
 Django settings for sharesAnalysis project.
 
@@ -25,7 +26,8 @@ SECRET_KEY = '(k@3x7*6)^)q$0fzb!!8w^gyq+2m9zsm$2iuabw-hs@%f6upxs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 设置所有地址都可以访问
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'welcomePage',
 ]
 
 MIDDLEWARE = [
